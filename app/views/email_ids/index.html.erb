@@ -1,0 +1,21 @@
+<h1>Listing email_ids</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @email_ids.each do |email_id| %>
+  <tr>
+    <td><%= link_to 'Show', email_id %></td>
+    <td><%= link_to 'Edit', edit_email_id_path(email_id) %></td>
+    <td><%= link_to 'Destroy', email_id, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Email', new_email_id_path %>
