@@ -45,6 +45,7 @@ test:
   database: microblog_test
   pool: 5
   username: microblog
+  host: localhost
   password:
 
 production:

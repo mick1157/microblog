@@ -1,7 +1,7 @@
 Microblog::Application.routes.draw do
-  resources :email_ids
+  resources :entries
 
-  resources :myblogs
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

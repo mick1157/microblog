@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003142835) do
+ActiveRecord::Schema.define(:version => 20121003172607) do
 
-  create_table "email_ids", :force => true do |t|
-    t.string   "email_id"
-    t.string   "user_name"
+  create_table "entries", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "post"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "myblogs", :force => true do |t|
-    t.string   "blog_entry"
-    t.integer  "user_id"
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "user_name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
