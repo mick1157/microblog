@@ -6,7 +6,7 @@ describe User do
   it { should validate_presence_of(:email)}      # mrt
 
   context 'relationships' do                        # mrt
-    should have_many :entries                       # mrt
+    it { should have_many :entries }                    # mrt
    end                                              # mrt
 
 end

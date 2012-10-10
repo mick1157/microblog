@@ -25,6 +25,7 @@ gem 'jquery-rails'
 group :development, :test do      # mrt
   gem 'rspec-rails'               # mrt
   gem 'shoulda-matchers'          # mrt
+  gem 'factory_girl_rails'        # mrt
 end                               # mrt
 
 

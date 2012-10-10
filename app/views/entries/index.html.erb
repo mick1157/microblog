@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>User</th>
-    <th>Post</th>
+    <th>User name</th>
+    <th>--- Post ---</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,7 +11,8 @@
 
 <% @entries.each do |entry| %>
   <tr>
-    <td><%= entry.user_id %></td>
+
+    <td><%= entry.user.user_name %></td>
     <td><%= entry.post %></td>
     <td><%= link_to 'Show', entry %></td>
     <td><%= link_to 'Edit', edit_entry_path(entry) %></td>

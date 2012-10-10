@@ -1,5 +1,9 @@
+<h1>Show user</h1>
+
 <p id="notice"><%= notice %></p>
 
+<p>Email .......: <%= @user.email %></p>
+<p>User name ...: <%= @user.user_name %></p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
