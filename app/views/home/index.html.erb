@@ -1,0 +1,17 @@
+<% @entries.each do |entry| %>
+    <div class='row-fluid'>
+      <div class='span5'>
+        <div class='well'>
+          <div class='pull-left'>
+            <strong>@<%= entry.user.user_name %></strong>
+          </div>
+          <div class='pull-right'>
+            <%= time_ago_in_words(entry.created_at) %> ago
+          </div>
+          <br />
+          <br />
+          <%= entry.post %>
+        </div>
+      </div>
+    </div>
+<% end %>
