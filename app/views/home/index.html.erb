@@ -1,3 +1,5 @@
+<h1>Home Page</h1>
+
 <% @entries.each do |entry| %>
     <div class='row-fluid'>
       <div class='span5'>
@@ -17,7 +19,11 @@
 <% end %>
 <br />
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'New User', new_user_path, :class => "btn btn-primary" %>
 <br />
-<%= link_to 'User list', users_path %>
+<%= link_to 'User list', users_path, :class => "btn btn-primary" %>
+<br />
+<%= link_to 'New Blog Post', new_entry_path, :class => "btn btn-primary"%>
+<br />
+<%= link_to 'Blog Post list', entries_path, :class => "btn btn-primary"%>
 <br />

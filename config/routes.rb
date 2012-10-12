@@ -3,12 +3,15 @@ Microblog::Application.routes.draw do
 
   resources :users
 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+#  match 'home/:id' => 'home#index'    # mrt   Tried to use this for a link_to   home_path  in erb but it didn't work
+
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
