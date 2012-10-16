@@ -10,8 +10,7 @@ Microblog::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-#  match 'home/:id' => 'home#index'    # mrt   Tried to use this for a link_to   home_path  in erb but it didn't work
-
+ match 'home/:id' => 'home#index', :as => "home"
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
